@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+import React, {useEffect, useState} from 'react';
 import './App.css';
+import 'react-input-checkbox/lib/react-input-checkbox.min.css';
+import './styles-for-checkbox.css';
+import HomepageScreen from './screens/Homepage';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { TestComponent } from "./components/TestComponent";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    return(
+        <Switch>
+            <Route path='/' exact component={ HomepageScreen } />
+            <Route path='/test'><p>TEST URL FOR ROUTER</p></Route>
+            <Route path='/slug/:slug'>
+                <TestComponent />
+            </Route>
+            <Route path='/slug/'>
+                <h1>NO usePARAMS</h1>
+            </Route>
+        </Switch>
+    )
+};
 
 export default App;
