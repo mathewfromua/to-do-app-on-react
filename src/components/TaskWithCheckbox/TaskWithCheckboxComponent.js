@@ -22,7 +22,9 @@ const TaskWithCheckboxComponent = ({
 				children={''}
 			/>
 			<div className='divForText'>
-				<p onMouseEnter={ displayComments } onMouseLeave={ hideComments } title='Click to see comments' > { task.text }</p>
+				<p onMouseEnter={ displayComments } onMouseLeave={ hideComments }>
+					{ task.text }
+				</p>
 			</div>
 			<button className='delete-btn' onClick={ () => deleteTasks() }>X</button>
 		</div>

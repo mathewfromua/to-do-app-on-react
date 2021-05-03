@@ -9,7 +9,7 @@ import { TestComponent } from "./components/TestComponent";
 const App = () => {
     return(
         <Switch>
-            <Route path='/' exact component={ HomepageScreen } />
+            <Route path='/to-do-app-on-react' exact component={ HomepageScreen } />
             <Route path='/test'><p>TEST URL FOR ROUTER</p></Route>
             <Route path='/slug/:slug'>
                 <TestComponent />

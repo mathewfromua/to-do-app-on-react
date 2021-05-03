@@ -16,6 +16,8 @@ const TaskWithCheckboxContainer = ({  tasks, task, setTasks }) => {
 		dispatch(deleteTask(task.id))
 		console.log(task.id);
 	};
+	
+	
 	const displayComments = () => {
 		const index = tasks.findIndex(el => el.id === task.id)
 		const parentDiv = document.getElementsByClassName('comments-pos');
@@ -27,16 +29,6 @@ const TaskWithCheckboxContainer = ({  tasks, task, setTasks }) => {
 		commentWindow.append(commentParagraph);
 		
 		parentDiv[index].append(commentWindow)
-		
-		if (index === tasks.length - 1) {
-		
-		}
-		
-		// console.log(
-		// 	parentDiv[index],
-		// 	parentDiv[index].children.length,
-		// 	index
-		// );
 	}
 	const hideComments = () => {
 		const index = tasks.findIndex(el => el.id === task.id)

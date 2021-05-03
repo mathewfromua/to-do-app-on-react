@@ -94,6 +94,10 @@
     /*background: rgba(0, 0, 0, 0.36);*/
 }
 
+/*.material-checkbox__input:checked + body.task-done:hover {*/
+/*    background: rgb(16, 140, 229);*/
+/*}*/
+
 /*.material-checkbox:nth-child(2n) {*/
 /*    background: rgba(218, 236, 248, 0.73);*/
 /*}*/
@@ -148,8 +152,14 @@
 
 .material-checkbox__input:checked + .material-checkbox__image {
     background-color: rgb(188, 243, 185);
+    /*background-color: rgb(126, 236, 120);*/
     /*z-index: 10;*/
 }
+
+/*.material-checkbox__input:checked + .material-checkbox__image:hover {*/
+/*    background-color: rgb(188, 243, 185);*/
+/*}*/
+
 .material-checkbox__input:checked + .material-checkbox__image.md-ink-ripple {
     background-color: rgba(255,82,82,0.87);
     border-color: rgba(0,0,0,0);

@@ -34,7 +34,7 @@ const TaskInputComponent = ({ taskComment, setTaskComment, taskText, setTaskText
 								addTask();
 								setTaskText('');
 								setTaskComment('');
-								console.log('ADDED TASK WITH ENTER')
+								console.log('ADDED TASK WITH ENTER (from commentInput)')
 							}
 						}
 					}

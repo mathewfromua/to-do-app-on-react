@@ -6,7 +6,7 @@ const taskReducerInitialState = {
 			id: 0,
 			text: 'Buy a MacBook',
 			isDone: false,
-			comment: 'With latest M1 chip and 8 core graphics'
+			comment: 'With the latest M1 chip and 8 core graphics'
 		},
 		{
 			id: 1,
